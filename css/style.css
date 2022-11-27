@@ -10,6 +10,7 @@
     --black-color: #000000;
     --white-color: #FFFFFF;
     --color-accent-two: #ECECEC;
+    --border-color: #EEEEEE;
     --contact-footer-color: rgba(255, 255, 255, 0.6);
 
      }
@@ -66,20 +67,17 @@ button{
 
 /* Header */
 .header{
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--color-accent-two);
 }
 
 .logo{
-    color: #000000;
+    color: var(--black-color);
 
     font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
-  margin-top: 24px;
-  margin-bottom: 25px;
 
   text-decoration: none;
 }
@@ -166,7 +164,6 @@ button{
 .container-hero{
     display: flex;
     width: 1200px;
-  padding: 200px auto 280px;
 
   flex-direction: column;
   text-align: center;
@@ -194,10 +191,6 @@ button{
     
 
 .hero-button{
-    display: flex;
-  align-items: center;
-  text-align: center;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -302,30 +295,29 @@ background-color: var(--accent-color);
 }
 .section-team{
     align-content: center;
-    background-color: var(--primary-bg-color);
 
     padding: 30px 5px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 .team-info{
-    /* background-color: var(--primary-bg-color); */
+    background-color: var(--primary-bg-color);
     width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-title{
   font-size: 36px;
     line-height: 1.2;
-    margin: auto;
     text-align: center;
     color: var(--primary-text-color);
+
+    margin-bottom: 50px;
 }
 .team-info:not(:last-child){
     margin-right: 30px;
 }
 .team-list{
     display: flex;
-    padding-top: 50px;
 }
 .name{
     color: var(--primary-text-color);
@@ -358,18 +350,15 @@ background-color: var(--accent-color);
     padding-top: 60px;
   padding-bottom: 60px;
 }
-.container-footer{
-  display: flex;
-  flex-direction: column;
-  
-  width: 1200px;
-}
+
 .footer .logo {
   color: var(--white-color);
   margin-top: 0;
+  
 }
 .adress{
   font-style: normal;
+  margin-top: 20px;
 }
 .adress-item:not(:last-child){
   margin-bottom: 9px;
@@ -460,9 +449,9 @@ background-color: var(--accent-color);
   padding: 20px 24px;
 
   background-color: var(--primary-bg-color);
-  border: 1px solid #000000;
+  border: 1px solid var(--border-color);
   border-top: none;
-  border-color: #EEEEEE;
+  
 }
 
 .cards{
